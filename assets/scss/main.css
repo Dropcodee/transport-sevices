@@ -43,7 +43,7 @@ header,
   body,
   header,
   .view {
-    height: 1000px; } }
+    height: 100%; } }
 @media (min-width: 800px) and (max-width: 850px) {
   html,
   body,
@@ -80,6 +80,34 @@ h6 {
 .header {
   text-align: center;
   margin: 5em auto; }
+
+.main-content.parallax {
+  padding-top: 100px;
+  padding-bottom: 30px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.parallax-01 {
+  background-image: url("../images/img1.jpg"); }
+
+.marginBottom-70 {
+  margin-bottom: 70px; }
+
+.container {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.card-over {
+  margin-top: -200px;
+  z-index: 10000;
+  background: #fff;
+  width: 980px;
+  text-align: center;
+  display: flex;
+  justify-content: space-around; }
 
 .mdb-color.lighten-5 {
   background-color: #d0d6e2 !important; }
