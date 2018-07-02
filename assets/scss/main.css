@@ -24,6 +24,14 @@
  * Atribution: Animate CSS, Twitter Bootstrap, Materialize CSS, Normalize CSS, Waves JS, WOW JS, Toastr, Chart.js , Hammer.js
  *
  */
+.my-line {
+  width: 60px;
+  border: 3px solid #3f51b5; }
+
+.my-line-lg {
+  width: 100px;
+  border: 3px solid #3f51b5; }
+
 html,
 body,
 header,
@@ -60,7 +68,8 @@ header,
   background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.6) 100%); }
 
 .card {
-  background-color: rgba(126, 123, 215, 0.2); }
+  background-color: rgba(126, 123, 215, 0.2);
+  text-align: center; }
 
 .md-form label {
   color: #ffffff; }
@@ -71,9 +80,6 @@ h6 {
 .header {
   text-align: center;
   margin: 5em auto; }
-  .header hr {
-    border-top: 5px solid #3f51b5;
-    width: 60px; }
 
 .mdb-color.lighten-5 {
   background-color: #d0d6e2 !important; }

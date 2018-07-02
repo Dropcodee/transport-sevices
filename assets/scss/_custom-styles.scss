@@ -1,7 +1,20 @@
 // Your custom styles
 //variables
 $hero-bg-color: #3f51b5;
-$rgba-hero-bg: rgba(126, 123, 215, 0.2); // end of variables
+$rgba-hero-bg: rgba(126, 123, 215, 0.2);
+// end of variables
+// general edits 
+.my-line {
+    width: 60px;
+    border: 3px solid $hero-bg-color;
+}
+
+.my-line-lg {
+    width: 100px;
+    border: 3px solid $hero-bg-color;
+}
+
+// end ifi general edits
 html,
 body,
 header,
@@ -55,6 +68,7 @@ header,
 
 .card {
     background-color: $rgba-hero-bg;
+    text-align: center;
 }
 
 .md-form label {
@@ -68,8 +82,4 @@ h6 {
 .header {
     text-align: center;
     margin: 5em auto;
-    hr {
-        border-top: 5px solid $hero-bg-color;
-        width: 60px;
-    }
 }
