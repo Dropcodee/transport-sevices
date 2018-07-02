@@ -1,15 +1,29 @@
 // Your custom styles
 //variables
-$hero-bg-color: #39448c;
-$transparent: transparent;
-// end of variables
+$hero-bg-color: #3f51b5;
+$rgba-hero-bg: rgba(126, 123, 215, 0.2); // end of variables
 html,
 body,
 header,
 .view {
-    height: 100% !important;
-    img {
-        height: 100%;
+    height: 100%;
+}
+
+@media (max-width: 740px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 1000px;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    html,
+    body,
+    header,
+    .view {
+        height: 650px;
     }
 }
 
@@ -18,5 +32,44 @@ header,
 }
 
 .navbar:not(.top-nav-collapse) {
-    background: $transparent !important;
+    background: transparent !important;
+}
+
+@media (max-width: 768px) {
+    .navbar:not(.top-nav-collapse) {
+        background: $hero-bg-color !important;
+    }
+}
+
+@media (min-width: 800px) and (max-width: 850px) {
+    .navbar:not(.top-nav-collapse) {
+        background: $hero-bg-color !important;
+    }
+}
+
+.rgba-gradient {
+    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
+    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.6) 100%));
+    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.6) 100%);
+}
+
+.card {
+    background-color: $rgba-hero-bg;
+}
+
+.md-form label {
+    color: #ffffff;
+}
+
+h6 {
+    line-height: 1.7;
+}
+
+.header {
+    text-align: center;
+    margin: 5em auto;
+    hr {
+        border-top: 5px solid $hero-bg-color;
+        width: 60px;
+    }
 }
