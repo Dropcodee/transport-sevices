@@ -16,6 +16,7 @@ include 'inc/header.php';
 <?php
 include 'pages/home.html'
 ?>
+
 <!-- 
     including footer.php here
     * contains
@@ -27,7 +28,7 @@ include 'pages/home.html'
 include 'inc/footer.php';
 ?>
 <!-- 
-     End of including header.php here
+     End of including footer.php here
 -->
 </body>
 

@@ -1,1 +1,22 @@
 // Your custom styles
+//variables
+$hero-bg-color: #39448c;
+$transparent: transparent;
+// end of variables
+html,
+body,
+header,
+.view {
+    height: 100% !important;
+    img {
+        height: 100%;
+    }
+}
+
+.top-nav-collapse {
+    background-color: $hero-bg-color !important;
+}
+
+.navbar:not(.top-nav-collapse) {
+    background: $transparent !important;
+}
