@@ -3,116 +3,104 @@
 $hero-bg-color: #3f51b5;
 $rgba-hero-bg: rgba(126, 123, 215, 0.2);
 // end of variables
-// general edits 
+// general edits
 .my-line {
-    width: 60px;
-    border: 3px solid $hero-bg-color;
+	width: 60px;
+	border: 3px solid $hero-bg-color;
 }
 
 .my-line-lg {
-    width: 100px;
-    border: 3px solid $hero-bg-color;
+	width: 100px;
+	border: 3px solid $hero-bg-color;
+}
+.header {
+	margin: 5em auto;
+}
+// end of general edits
+html,
+body {
+	height: 100%;
 }
 
-// end ifi general edits
-html,
-body,
-header,
-.view {
-    height: 100%;
-}
+/* Mobile styling for other mobile platforms */
 
 @media (max-width: 740px) {
-    html,
-    body,
-    header,
-    .view {
-        height: 100%;
-    }
+	html,
+	body {
+		height: 100%;
+	}
 }
 
 @media (min-width: 800px) and (max-width: 850px) {
-    html,
-    body,
-    header,
-    .view {
-        height: 650px;
-    }
+	html,
+	body {
+		height: 100%;
+	}
+}
+@media (max-width: 768px) {
+	.navbar:not(.top-nav-collapse) {
+		background: $hero-bg-color !important;
+	}
 }
 
+@media (min-width: 800px) and (max-width: 850px) {
+	.navbar:not(.top-nav-collapse) {
+		background: $hero-bg-color !important;
+	}
+}
+/* End of mobile edits for mobile platforms */
+
 .top-nav-collapse {
-    background-color: $hero-bg-color !important;
+	background-color: $hero-bg-color !important;
 }
 
 .navbar:not(.top-nav-collapse) {
-    background: transparent !important;
+	background: $hero-bg-color !important;
 }
 
-@media (max-width: 768px) {
-    .navbar:not(.top-nav-collapse) {
-        background: $hero-bg-color !important;
-    }
-}
 
-@media (min-width: 800px) and (max-width: 850px) {
-    .navbar:not(.top-nav-collapse) {
-        background: $hero-bg-color !important;
-    }
-}
 
 .rgba-gradient {
-    background: -webkit-linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.4) 100%);
-    background: -webkit-gradient(linear, 45deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.6) 100%));
-    background: linear-gradient(to 45deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.6) 100%);
+	background: -webkit-linear-gradient(
+		60deg,
+		rgba(0, 0, 0, 0.7),
+		rgba(72, 15, 144, 0.7) 100%
+	);
+	background: -webkit-gradient(
+		linear,
+		60deg,
+		from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.8) 100%)
+	);
+	background: linear-gradient(
+		to 60deg,
+		rgba(0, 0, 0, 0.7),
+		rgba(72, 15, 144, 0.8) 100%
+	);
 }
 
 .card {
-    background-color: $rgba-hero-bg;
-    text-align: center;
+	background-color: $rgba-hero-bg;
+	text-align: center;
 }
 
 .md-form label {
-    color: #ffffff;
+	color: #ffffff;
 }
 
 h6 {
-    line-height: 1.7;
+	line-height: 1.7;
 }
 
 .header {
-    text-align: center;
-    margin: 5em auto;
-}
-
-.main-content.parallax {
-    padding-top: 100px;
-    padding-bottom: 30px;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-.parallax-01 {
-    background-image: url('../images/img1.jpg');
-}
-
-.marginBottom-70 {
-    margin-bottom: 70px;
-}
-
-.container {
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+	text-align: center;
 }
 
 .card-over {
-    margin-top: -200px;
-    z-index: 10000;
-    background: #fff;
-    width: 980px;
-    text-align: center;
-    display: flex;
-    justify-content: space-around;
+	margin-top: -200px;
+	z-index: 10000;
+	background: #fff;
+	width: 980px;
+	text-align: center;
+	display: flex;
+	justify-content: space-around;
 }
