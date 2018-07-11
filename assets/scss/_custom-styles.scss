@@ -13,9 +13,11 @@ $rgba-hero-bg: rgba(126, 123, 215, 0.2);
 	width: 100px;
 	border: 3px solid $hero-bg-color;
 }
+
 .header {
 	margin: 5em auto;
 }
+
 // end of general edits
 html,
 body {
@@ -37,6 +39,7 @@ body {
 		height: 100%;
 	}
 }
+
 @media (max-width: 768px) {
 	.navbar:not(.top-nav-collapse) {
 		background: $hero-bg-color !important;
@@ -48,6 +51,7 @@ body {
 		background: $hero-bg-color !important;
 	}
 }
+
 /* End of mobile edits for mobile platforms */
 
 .top-nav-collapse {
@@ -58,24 +62,10 @@ body {
 	background: $hero-bg-color !important;
 }
 
-
-
 .rgba-gradient {
-	background: -webkit-linear-gradient(
-		60deg,
-		rgba(0, 0, 0, 0.7),
-		rgba(72, 15, 144, 0.7) 100%
-	);
-	background: -webkit-gradient(
-		linear,
-		60deg,
-		from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.8) 100%)
-	);
-	background: linear-gradient(
-		to 60deg,
-		rgba(0, 0, 0, 0.7),
-		rgba(72, 15, 144, 0.8) 100%
-	);
+	background: -webkit-linear-gradient( 60deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.7) 100%);
+	background: -webkit-gradient( linear, 60deg, from(rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.8) 100%));
+	background: linear-gradient( to 60deg, rgba(0, 0, 0, 0.7), rgba(72, 15, 144, 0.8) 100%);
 }
 
 .card {
@@ -103,4 +93,114 @@ h6 {
 	text-align: center;
 	display: flex;
 	justify-content: space-around;
+}
+
+/* Carousel slider styles */
+
+.carousel,
+.img-responsive {
+	height: 650px !important;
+}
+
+.img-responsive {
+	img {
+		background-size: contain !important;
+		background-position: center center !important;
+		background-attachment: fixed !important;
+		height: 650px !important;
+	}
+}
+
+.carousel-caption {
+	bottom: 200px !important;
+	.hero-text {
+		font-size: 55px !important;
+	}
+	.hero-subtext {
+		font-size: 32px !important;
+	}
+}
+
+/* Carousel slider styles */
+
+.register-section {
+	background-image: url('../images/location.jpg');
+	background-attachment: fixed;
+	background-position: center center;
+	background-size: cover;
+	width: 100%;
+	.custom-overlay {
+		background-color: rgba(0, 0, 0, .8) !important;
+	}
+	.new-desc {
+		color: #ffffff;
+		padding-top: 1em;
+	}
+	.col-spacing {
+		margin-bottom: 3.5em;
+	}
+	.custom-card-bg {
+		background-color: #fff;
+	}
+}
+
+.contact-card {
+	width: 400px;
+	margin: auto;
+}
+
+/*  Google maps styling */
+
+#map-container {
+	height: 650px;
+	width: 100%;
+	position: relative;
+}
+
+/*  Google maps styling */
+
+.nav-tabs {
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+	border: 0;
+	padding: .7rem;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	margin-bottom: -20px;
+	background-color: #2bbbad;
+	z-index: 1;
+	position: relative;
+	-webkit-border-radius: .25rem;
+	border-radius: .25rem;
+}
+
+.waves-effect {
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: transparent;
+}
+
+.nav-tabs .nav-link {
+	border: 0 !important;
+	border-radius: 0 !important;
+}
+
+.nav-link.active {
+	background: rgba(0, 0, 0, .15) !important;
+	border-color: transparent !important;
+}
+
+.nav-link a:hover {
+	border: 0 !important;
+	border-radius: 0 !important;
+	border-color: transparent !important;
+}
+
+.card {
+	background: #fff !important;
 }

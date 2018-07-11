@@ -45,7 +45,36 @@
         </nav>
         <!-- Navbar -->
     </header>
+    <!--Jumbotron-->
+    <section style="margin-top: 3em;">
+        <div class="jumbotron text-center">
 
+            <!--Title-->
+            <h1 class="card-title h2-responsive mt-2">
+                <strong>DC MOTORS</strong>
+            </h1>
+            <!--Subtitle-->
+            <h2 class="blue-text mb-4 font-bold">
+                Our Main Branches.
+            </h2>
+
+            <!--Text-->
+            <div class="d-flex justify-content-center">
+                <p class="card-text mb-3" style="max-width: 43rem;">We transport all round Nigeria, From Lagos to anywhere you want us to be. Here are a the locations of our
+                    main branches in Nigeria.
+                </p>
+            </div>
+
+            <hr class="my-4">
+
+        </div>
+        <!--Jumbotron-->
+    </section>
+    <section style="margin-top: 5em;">
+        <div id="map-container" class="z-depth-1">
+
+        </div>
+    </section>
     <footer class="page-footer font-small indigo">
         <!-- Copyright -->
         <div class="footer-copyright text-center py-3">© 2018 Copyright:
@@ -65,9 +94,10 @@
     <script type="text/javascript" src="./assets/js/modules/jquery.easing.js"></script>
     <script type="text/javascript" src="./assets/js/modules/scrolling-navbar.js"></script>
     <script type="text/javascript" src="./assets/js/modules/wow.js"></script>
-    <script>
-        new WOW().init();
-    </script>
+    <script src="./assets/js/locations.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCCE0ZkljvphW0W9BoXTeGvlp7nuPu5RoM&callback=initMap" async
+        defer></script>
+
 </body>
 
 </html>
