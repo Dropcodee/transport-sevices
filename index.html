@@ -319,23 +319,26 @@
                         <div class="card custom-card-bg">
                             <div class="card-body">
                                 <!-- Material form login -->
-                                <form>
+                                <form onClick=onLoginSubmit()>
                                     <p class="h4 text-center mb-4">Sign in</p>
 
                                     <!-- Material input email -->
                                     <div class="md-form">
-                                        <input type="email" id="materialFormLoginEmailEx" class="form-control">
+                                        <input type="email" id="loginEmail" class="form-control">
                                         <label for="materialFormLoginEmailEx">Your email</label>
+                                        <span id="loginEmailError" style="color:brown;"></span>
                                     </div>
 
                                     <div class="md-form">
                                         <!-- Material input password -->
-                                        <input type="password" id="materialFormLoginPasswordEx" class="form-control">
+                                        <input type="password" id="loginPassword" class="form-control">
                                         <label for="materialFormLoginPasswordEx">Your password</label>
+                                        <span id="loginPasswordError" style="color:brown;"></span>
+                                        <span id="loginSuccess" style="color:brown;"></span>
                                     </div>
 
                                     <div class="text-center mt-4">
-                                        <button class="btn btn-default" type="submit">Login</button>
+                                        <button class="btn btn-default" type="button" id="loginUser">Login</button>
                                     </div>
                                 </form>
                                 <!-- Material form login -->
@@ -422,11 +425,12 @@
         <!-- Copyright -->
 
     </footer>
+    <script type="text/javascript" src="./assets/js/validation.js"></script>
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
     <!-- My validation script-->
     <script type="text/javascript" src="./assets/js/main.js"></script>
-    <script type="text/javascript" src="./assets/js/validation.js"></script>
+
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
