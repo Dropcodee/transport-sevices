@@ -13,6 +13,7 @@
     <link href="./assets/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./assets/scss/main.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.0/css/font-awesome.min.css">
+
 </head>
 
 <body>
@@ -270,34 +271,38 @@
                         <div class="card custom-card-bg">
                             <div class="card-body">
                                 <!-- Material form register -->
-                                <form>
+                                <form onClick="onSubmit()">
                                     <p class="h4 text-center py-4">Sign up</p>
                                     <!-- Material input text -->
                                     <div class="md-form">
-                                        <input type="text" id="materialFormCardNameEx" class="form-control">
+                                        <input type="text" id="userName" class="form-control" id>
                                         <label for="materialFormCardNameEx" class="font-weight-light">Your name</label>
+                                        <span id="userNameError" style="color:brown;"></span>
                                     </div>
 
                                     <!-- Material input email -->
                                     <div class="md-form">
-                                        <input type="email" id="materialFormCardEmailEx" class="form-control">
+                                        <input type="email" id="userEmail" class="form-control" required>
                                         <label for="materialFormCardEmailEx" class="font-weight-light">Your email</label>
+                                        <span id="userEmailError" style="color:brown;"></span>
                                     </div>
 
                                     <!-- Material input email -->
                                     <div class="md-form">
-                                        <input type="password" id="materialFormCardConfirmEx" class="form-control">
+                                        <input type="password" id="userPassword" class="form-control">
                                         <label for="materialFormCardConfirmEx" class="font-weight-light">Your Password</label>
+                                        <span id="userPasswordError" style="color:brown;"></span>
                                     </div>
 
                                     <!-- Material input password -->
                                     <div class="md-form">
-                                        <input type="password" id="materialFormCardPasswordEx" class="form-control">
+                                        <input type="password" id="userVerifyPassword" class="form-control">
                                         <label for="materialFormCardPasswordEx" class="font-weight-light">Verify Password</label>
+                                        <span id="verifyPasswordError" style="color:brown;"></span>
                                     </div>
 
                                     <div class="text-center py-4 mt-3">
-                                        <button class="btn btn-cyan" type="submit">Register</button>
+                                        <button class="btn btn-cyan" type="button" id="submit">Register</button>
                                     </div>
                                 </form>
                                 <!-- Material form register -->
@@ -417,9 +422,11 @@
         <!-- Copyright -->
 
     </footer>
-    <!-- JQuery -->
     <script type="text/javascript" src="assets/js/jquery.min.js"></script>
     <!-- Bootstrap tooltips -->
+    <!-- My validation script-->
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/validation.js"></script>
     <!-- Bootstrap core JavaScript -->
     <script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
     <!-- MDB core JavaScript -->
@@ -428,7 +435,7 @@
     <script type="text/javascript" src="./assets/js/modules/jquery.easing.js"></script>
     <script type="text/javascript" src="./assets/js/modules/scrolling-navbar.js"></script>
     <script type="text/javascript" src="./assets/js/modules/wow.js"></script>
-    <script type="text/javascript" src="./assets/js/main.js"></script>
+
     <script>
         new WOW().init();
     </script>
