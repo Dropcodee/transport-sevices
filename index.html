@@ -22,7 +22,7 @@
         <!-- Navbar -->
         <nav class="navbar navbar-expand-lg navbar-dark fixed-top scrolling-navbar">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="index.html">
                     <strong>DC-MOTORS</strong>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-7" aria-controls="navbarSupportedContent-7"
@@ -41,9 +41,6 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="Bookings.html">Bookings</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
                         </li>
                     </ul>
                 </div>
@@ -192,7 +189,7 @@
                     <div class="card-body">
 
                         <!-- title of the card-->
-                        <h4 class="card-title custom-align"> Delivery Bookings. </h4>
+                        <h4 class="card-title custom-align"> Cargo Bookings. </h4>
                         <hr class="my-line">
                         <!-- end of card title -->
                         <!-- card content-->
@@ -271,7 +268,7 @@
                         <div class="card custom-card-bg">
                             <div class="card-body">
                                 <!-- Material form register -->
-                                <form onClick="onSubmit()">
+                                <form onclick="onSubmit()">
                                     <p class="h4 text-center py-4">Sign up</p>
                                     <!-- Material input text -->
                                     <div class="md-form">
@@ -319,7 +316,7 @@
                         <div class="card custom-card-bg">
                             <div class="card-body">
                                 <!-- Material form login -->
-                                <form onClick=onLoginSubmit()>
+                                <form onclick="onLoginSubmit()">
                                     <p class="h4 text-center mb-4">Sign in</p>
 
                                     <!-- Material input email -->
@@ -334,11 +331,12 @@
                                         <input type="password" id="loginPassword" class="form-control">
                                         <label for="materialFormLoginPasswordEx">Your password</label>
                                         <span id="loginPasswordError" style="color:brown;"></span>
-                                        <span id="loginSuccess" style="color:brown;"></span>
+                                        <span id="loginSuccess" style="color: green;"></span>
                                     </div>
 
                                     <div class="text-center mt-4">
                                         <button class="btn btn-default" type="button" id="loginUser">Login</button>
+                                        <span id="loginSuccess" style="color: green;"></span>
                                     </div>
                                 </form>
                                 <!-- Material form login -->
@@ -364,29 +362,33 @@
                 <div class="card contact-card">
                     <div class="card-body">
                         <!-- form contact -->
-                        <form>
+                        <form onclick="onContactSubmit()">
                             <p class="h4 text-center mb-4">Contact & Enquiries</p>
 
                             <!-- input text -->
                             <div class="md-form">
-                                <input type="text" id="materialFormContactNameEx" class="form-control">
+                                <input type="text" id="contactName" class="form-control">
                                 <label for="materialFormContactNameEx">Your name</label>
+                                <span id="contactNameErrors" style="color:brown;"></span>
                             </div>
 
                             <!-- input email -->
                             <div class="md-form">
-                                <input type="email" id="materialFormContactEmailEx" class="form-control">
+                                <input type="email" id="contactEmail" class="form-control">
                                 <label for="materialFormContactEmailEx">Your email</label>
+                                <span id="contactEmailError" style="color:brown;"></span>
                             </div>
+
 
                             <!--textarea message -->
                             <div class="md-form">
-                                <textarea type="text" id="materialFormContactMessageEx" class="form-control md-textarea" rows="3"></textarea>
+                                <textarea type="text" id="contactMessage" class="form-control md-textarea" rows="3"></textarea>
                                 <label for="materialFormContactMessageEx">Your message</label>
+                                <span id="messageError" style="color:brown;"></span>
                             </div>
 
                             <div class="text-center mt-4">
-                                <button class="btn btn-outline-secondary" type="submit">Send
+                                <button class="btn btn-outline-secondary" type="button" id="contactBtn">Send
                                     <i class="fa fa-paper-plane-o ml-2"></i>
                                 </button>
                             </div>
@@ -400,16 +402,29 @@
 
     <!-- Start of Social Media section-->
     <section>
-        <div class="header">
-            <h1 class="h1-responsive center-aligned center"> Social Platforms </h1>
-            <hr class="my-line-lg">
-        </div>
         <div class="container">
-            <div class="row social">
-                <div class=" col-6 col-md-3 col-sm-3"> social icon 1</div>
-                <div class=" col-6 col-md-3 col-sm-3"> social icon 1</div>
-                <div class=" col-6 col-md-3 col-sm-3"> social icon 1</div>
-                <div class=" col-6 col-md-3 col-sm-3"> social icon 1</div>
+            <div class="header">
+                <h1 class="h1-responsive center-aligned center"> Social Platforms </h1>
+                <hr class="my-line-lg">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3">
+                <button type="button" class="btn btn-fb">
+                    <i class="fa fa-facebook pr-1"></i> Facebook</button>
+                <!--Twitter-->
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-tw">
+                    <i class="fa fa-twitter pr-1"></i> Twitter</button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-li">
+                    <i class="fa fa-linkedin pr-1"></i> LinkedIn</button>
+            </div>
+            <div class="col-md-3">
+                <button type="button" class="btn btn-ins">
+                    <i class="fa fa-instagram pr-1"></i> Instagram</button>
             </div>
         </div>
     </section>

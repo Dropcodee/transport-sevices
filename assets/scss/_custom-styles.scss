@@ -18,6 +18,10 @@ $rgba-hero-bg: rgba(126, 123, 215, 0.2);
 	margin: 5em auto;
 }
 
+.pad-5 {
+	padding: 5px;
+}
+
 // end of general edits
 html,
 body {
@@ -203,4 +207,44 @@ h6 {
 
 .card {
 	background: #fff !important;
+}
+
+.btn-floating {
+	-webkit-box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+	box-shadow: 0 5px 11px 0 rgba(0, 0, 0, .18), 0 4px 15px 0 rgba(0, 0, 0, .15);
+	width: 47px;
+	height: 47px;
+	position: relative;
+	z-index: 1;
+	vertical-align: middle;
+	display: inline-block;
+	overflow: hidden;
+	-webkit-transition: all .2s ease-in-out;
+	-o-transition: all .2s ease-in-out;
+	transition: all .2s ease-in-out;
+	margin: 10px;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	padding: 0;
+	cursor: pointer;
+}
+
+.btn-fb {
+	background-color: #3b5998 !important;
+	color: #fff !important;
+}
+
+.btn-tw {
+	background-color: #55acee !important;
+	color: #fff !important;
+}
+
+.btn-li {
+	background-color: #0082ca !important;
+	color: #fff !important;
+}
+
+.btn-ins {
+	background-color: #2e5e86 !important;
+	color: #fff !important;
 }
